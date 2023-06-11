@@ -94,6 +94,7 @@ function checkIsValidPw() {
     checkValidationSubmit()
 }
 function checkIsValidPwCheck() {
+    checkIsValid($pw, $pwMsg)
     checkIsValid($pwCheck, $pwCheckMsg)
     checkValidationSubmit()
 }
@@ -140,6 +141,7 @@ function resetForm() {
     $id.value = ''
     $pw.value = ''
     $pwCheck.value = ''
+    $submit.disabled = true
 }
 
 $approveBtn.addEventListener('click', () => {
